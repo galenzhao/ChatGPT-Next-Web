@@ -46,6 +46,7 @@ export enum Theme {
 export interface ChatConfig {
   historyMessageCount: number; // -1 means all
   compressMessageLengthThreshold: number;
+  requestTimeOut: number;
   sendBotMessages: boolean; // send bot's message or not
   submitKey: SubmitKey;
   avatar: string;
@@ -137,6 +138,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   sendBotMessages: true as boolean,
   submitKey: SubmitKey.CtrlEnter as SubmitKey,
   avatar: "1f603",
+  requestTimeOut: 30,
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: false,
