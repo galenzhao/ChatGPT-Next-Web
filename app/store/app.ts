@@ -139,14 +139,14 @@ const DEFAULT_CONFIG: ChatConfig = {
   sendBotMessages: true as boolean,
   submitKey: SubmitKey.CtrlEnter as SubmitKey,
   avatar: "1f603",
-  requestTimeOut: 30,
+  requestTimeOut: 630,
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: false,
-  sendPreviewBubble: true,
+  sendPreviewBubble: false,
   sidebarWidth: 300,
 
-  disablePromptHint: false,
+  disablePromptHint: true,
 
   modelConfig: {
     model: "gpt-3.5-turbo",
